@@ -29,6 +29,18 @@ The final circuit is securely implemented on a custom hand-soldered zero PCB per
 
 ![Hardware Setup 3](media/3.jpeg)
 
+#### Interactive Dashboard & Control Interface
+The system integrates an asynchronous MQTT-backed Node-RED interface for operational command and centralized data visualization. 
+
+* **Telemetry UI:** Provides real-time tracking of dual-channel power metrics (W), mains voltage parameters (V), localized load consumption (kWh), and system fault alerts.
+* **Control UI:** Features interactive actuation toggle inputs to manually override individual load relays remotely over the local network via specific MQTT command topics (`home/control/relay1`, `home/control/relay2`).
+
+![Node-RED Dashboard UI](media/5.png)
+*(Centralized user dashboard displaying live electrical parameters and relay actuation states)*
+
+![Node-RED Backend Flow Connections](media/4.png)
+*(Asynchronous event-driven Node-RED flow backend handling incoming payload parsing and topic routing)*
+
 ## Firmware Features
 
 * **FreeRTOS Integration:** Task scheduling and strict core pinning for deterministic execution.
