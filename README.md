@@ -12,9 +12,9 @@ This system utilizes an asymmetric multiprocessing architecture on the ESP32, st
 
 ## 🛠️ Hardware Stack
 
-* **Microcontroller:** ESP32 (Tensilica Xtensa Dual-Core)
+* **Microcontroller:** ESP32
 * **Voltage Sensing:** ZMPT101B (Galvanically isolated)
-* **Current Sensing:** 2x ACS712 (Hall-effect, Dual Channel)
+* **Current Sensing:** 2x ACS712 (Hall-effect)
 * **HMI Display:** SH1106 128x64 OLED (I2C)
 * **Actuation:** Dual 5V Relays for load switching
 * **Alerts:** Active Buzzer and discrete LED fault indicators
