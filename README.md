@@ -22,9 +22,6 @@ This system utilizes an asymmetric multiprocessing architecture on the ESP32, st
 ### Hardware Implementation & Demo
 The final circuit is securely implemented on a custom hand-soldered zero PCB perf board for optimal signal integrity in noisy environments.
 
-#### System Demonstration
-<video src="media/Video.mp4" controls width="100%" max-width="600px"></video>.
-
 #### Hardware Setup Gallery
 ![Hardware Setup 1](media/1.jpeg)
 
